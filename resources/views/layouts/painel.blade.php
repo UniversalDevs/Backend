@@ -108,6 +108,18 @@
                             </a>
                             
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('admin.participantes.lista')}}" class="nav-link">
+                                <i class="fas fa-user nav-icon"></i>
+                                <p>
+                                    Participantes
+                                       
+                                </p>
+                            </a>
+                            
+                        </li>
+                        
                         
                             
                             <!-- <ul class="nav nav-treeview">

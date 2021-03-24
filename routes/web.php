@@ -49,6 +49,15 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth'], 'as'=>'admin.'], functi
         Route::post('/update/{id}', ['as'=>'update','uses'=>'Painel\VoluntariosController@update']);
         Route::get('/delete/{id}', ['as'=>'delete','uses'=>'Painel\VoluntariosController@delete']);
     });
+
+    Route::group(['prefix'=>'participantes','as'=>'participantes.'], function () {
+        Route::get('/lista', ['as'=>'lista','uses'=>'Painel\ParticipantesController@lista']);
+        Route::get('/novo', ['as'=>'novo','uses'=>'Painel\ParticipantesController@novo']);
+        Route::get('/editar/{id}', ['as'=>'editar','uses'=>'Painel\ParticipantesController@editar']);
+        Route::post('store', ['as'=>'store','uses'=>'Painel\ParticipantesController@store']);
+        Route::post('/update/{id}', ['as'=>'update','uses'=>'Painel\ParticipantesController@update']);
+        Route::get('/delete/{id}', ['as'=>'delete','uses'=>'Painel\ParticipantesController@delete']);
+    });
 });
 
 

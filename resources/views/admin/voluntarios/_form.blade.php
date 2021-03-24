@@ -6,7 +6,7 @@
         </div>
         <div class="form-group col-sm-4">
             <label for="">Tipo</label>
-            <select name="" id="" class="form-control">
+            <select name="tipo" id="" class="form-control">
                 <option value="Específico">Específico</option>
                 <option value="Geral">Geral</option>
                 <option value="Inativo">Inativo</option>
