@@ -7,8 +7,8 @@
         <div class="form-group col-sm-4">
             <label for="">Status</label>
             <select name="status" id="" class="form-control">
-                <option value="Ativo">Ativo</option>
-                <option value="Inativo">Inativo</option>
+                <option value="Ativo" @if(@$participante->status == 'Ativo') selected="" @endif>Ativo</option>
+                <option value="Inativo" @if(@$participante->status == 'Inativo') selected="" @endif>Inativo</option>
             </select>
         </div>
         <div class="form-group col-sm-4">

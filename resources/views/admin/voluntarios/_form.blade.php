@@ -7,9 +7,9 @@
         <div class="form-group col-sm-4">
             <label for="">Tipo</label>
             <select name="tipo" id="" class="form-control">
-                <option value="Específico">Específico</option>
-                <option value="Geral">Geral</option>
-                <option value="Inativo">Inativo</option>
+                <option value="Específico" @if(@$voluntario->tipo == 'Específico') selected="" @endif>Específico</option>
+                <option value="Geral" @if(@$voluntario->tipo == 'Geral') selected="" @endif>Geral</option>
+                <option value="Inativo"  @if(@$voluntario->tipo == 'Inativo') selected="" @endif>Inativo</option>
             </select>
         </div>
         <div class="form-group col-sm-6">

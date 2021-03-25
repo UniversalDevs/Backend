@@ -103,10 +103,8 @@
                                 <i class="fas fa-chalkboard-teacher nav-icon"></i>
                                 <p>
                                     Voluntários
-                                   
                                 </p>
                             </a>
-                            
                         </li>
 
                         <li class="nav-item">
@@ -114,10 +112,17 @@
                                 <i class="fas fa-user nav-icon"></i>
                                 <p>
                                     Participantes
-                                       
                                 </p>
                             </a>
-                            
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('admin.projetos.lista')}}" class="nav-link">
+                                <i class="fas fa-lightbulb nav-icon"></i>
+                                <p>
+                                    Projetos
+                                </p>
+                            </a>
                         </li>
                         
                         

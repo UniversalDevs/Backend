@@ -58,6 +58,15 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth'], 'as'=>'admin.'], functi
         Route::post('/update/{id}', ['as'=>'update','uses'=>'Painel\ParticipantesController@update']);
         Route::get('/delete/{id}', ['as'=>'delete','uses'=>'Painel\ParticipantesController@delete']);
     });
+
+    Route::group(['prefix'=>'projetos','as'=>'projetos.'], function () {
+        Route::get('/lista', ['as'=>'lista','uses'=>'Painel\ProjetosController@lista']);
+        Route::get('/novo', ['as'=>'novo','uses'=>'Painel\ProjetosController@novo']);
+        Route::get('/editar/{id}', ['as'=>'editar','uses'=>'Painel\ProjetosController@editar']);
+        Route::post('store', ['as'=>'store','uses'=>'Painel\ProjetosController@store']);
+        Route::post('/update/{id}', ['as'=>'update','uses'=>'Painel\ProjetosController@update']);
+        Route::get('/delete/{id}', ['as'=>'delete','uses'=>'Painel\ProjetosController@delete']);
+    });
 });
 
 
